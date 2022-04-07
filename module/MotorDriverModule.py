@@ -7,4 +7,4 @@ def MotorDriverControl(pins, states, pwm_duty = 1023):
     
     out1.value(states[0])
     out2.value(states[1])
-    pwm0.duty(pwm_duty)
+    enab.duty(pwm_duty)
