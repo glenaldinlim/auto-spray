@@ -11,6 +11,14 @@ ap_ssid = "AutoSpray-AP"
 ap_password = "TugasAkhir"
 ap_authmode = 3
 
+# WiFi Configuration
+wifi_ssid = "NGEDOSAKUY2"
+wifi_password = "10100011"
+
+# Firebase Configuration
+firebaseUrl = "https://auto-spray-iot-default-rtdb.asia-southeast1.firebasedatabase.app/"
+firebasePathVersion = "v1"
+
 # API Configuration
 endpointUrl = "https://auto-spray-iot.vercel.app/api/"
 pathVersion = "v1"
