@@ -1,15 +1,14 @@
 from config import endpointUrl, pathVersion, headers
-import urequests as requests
+import urequests
 import ujson
 
-def getData(location):
+def getDataAPI(location):
     path = endpointUrl + pathVersion + location
-    res = requests.get(path, headers=headers)
+    res = urequests.request("GET", path)
     return res.json()
 
-def postData(location, req):
+def postDataAPI(location, req):
     path = endpointUrl + pathVersion + location
     body = ujson.dumps(req)
-    res = requests.post(path, headers=headers, data=body)
+    res = urequests.post(path, headers=headers, data=body)
     return res.json()
-    
