@@ -33,6 +33,7 @@ while True:
     detect = 0
     MotorDriverControl(motorPins[:2], [0, 0])
     MotorDriverControl(pompPins[:2], [0, 0])
+    print("[STAT] Standby")
     if (readState() == 1):
         config = getDataAPI("/realtime/config")
         mode = config["data"]["mode"]
