@@ -2,7 +2,6 @@
 from config import pompPins, motorPins
 
 # Built-in Module
-import json
 from utime import sleep, time
 
 # Third-party Module
